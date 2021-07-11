@@ -4,6 +4,7 @@ import {
     gql
 } from "@apollo/client";
 import LaunchItem from './LaunchItem';
+import MissionKey from './MissionKey';
 
 
 const LAUNCHES_QUERY = gql`
@@ -37,6 +38,7 @@ export class Launches extends Component {
         return (
             <Fragment>
                 <h1 className="dispaly-4 my-3">Launches</h1>
+                <MissionKey />
                 <LaunchQuery />
             </Fragment>
         )
